@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/style.css">
-        <link type="text/css" rel="stylesheet" href="css/materialize.css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <title>Alkya</title>
     </head>
     <body>
@@ -24,20 +24,20 @@
         ?>
 
 
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+        <div class="card">
             <?php for ($i=0; $maxCard > $i ; $i++) {?>
             <div class="card-body">
-                <h5 class="card-title"><?php echo $card[$i]['name']; ?></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <img src="<?php echo $card[$i]['profil_picture']; ?>" class="card-img-top" alt="aie">   
+                <a href="#"><?php echo $card[$i]['name']; ?></a>
+                <a href="tesuto.php"></a>
             </div>
             <?php } ?>
         </div>
 
 
+
         <script src="js/jquery.js"></script>
-        <script src="js/materialize.min.js"></script>
+        <script src="js/bootsrap.bundle.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
