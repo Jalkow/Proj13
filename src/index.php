@@ -2,26 +2,42 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="screen,projection"/>
-        <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/materialize.css"/>
         <title>Alkya</title>
     </head>
     <body>
+        <?php
 
-        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Link with href
-        </a>
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        require_once "config.php";
+
+        $sql = "SELECT * FROM presentation"; //sql request to get user infos
+        $pre = $pdo->prepare($sql);
+        $pre->execute();
+        $card = $pre->fetchAll(PDO::FETCH_ASSOC);
+
+        $sql = "SELECT count(*) FROM presentation"; //sql request to get user infos
+        $pre = $pdo->prepare($sql);
+        $pre->execute();
+        $cardCount = $pre->fetchAll(PDO::FETCH_ASSOC);
+        $maxCard = $cardCount[0]['count(*)'];
+        ?>
+
+
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <?php for ($i=0; $maxCard > $i ; $i++) {?>
+            <div class="card-body">
+                <h5 class="card-title"><?php echo $card[$i]['name']; ?></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
+            <?php } ?>
         </div>
 
-        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
