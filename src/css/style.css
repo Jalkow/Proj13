@@ -1,0 +1,12 @@
+.navbar{
+    max-height: 10vh;
+}
+
+.nav-link{
+    font-size: 2rem;
+    
+}
+
+.navbar-brand img{
+    max-height: 10vh;
+}
