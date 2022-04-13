@@ -29,8 +29,8 @@
         ?>
 
         
+        
         <div class="parallax-window" data-parallax="scroll" data-image-src="img/media/img_fond.jpg"></div>
-
         <div class="container" id="actuCard">
             <div class="row">
             <?php for ($i=0; $maxCard > $i ; $i++) {?>
@@ -47,9 +47,11 @@
                 <?php } ?>
             </div>
         </div>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/media/img_fond.jpg"></div>
         <div id="transi">
 
         </div>
+       
 
 
 
