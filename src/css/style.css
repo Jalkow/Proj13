@@ -1,27 +1,62 @@
 body{
     background-color: #121212 !important;
     color: #F6F6F6 !important;
+    font-family: 'Rubik Wet Paint', cursive;
+
 }
 
-a {
-    color: #F6F6F6 !important;
-    text-decoration: none !important;
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+#transi{
+    height: 1000px;
+    background-color: red;
+}
+
+
+.card-body p{
+    color: #121212;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+
 }
 
 .card{
     margin-top: 20px;
-    width: 300px;
-    background-color: #121212 !important;
+    width: 270px;
+    background-color: transparent !important;
+    border: 0 !important;
 }
 .card-img-top{
-    width: 300px !important;
-    
+    width: 270px !important;
+    border-radius: 2.5rem !important;
 }
 
 .card-body{
     text-align: center !important;
 }
+
+#card_buble{
+    width: 320px;
+    height: auto;
+    z-index: -1;
+    position: relative;
+    bottom: 190px;
+    right: 25px;
+}
     
+#actuCard .btn-primary{
+    background-color: rgb(189, 78, 170) !important;
+    border-color: rgb(189, 78, 170) !important;
+    border-radius: 2.5rem;
+    position: relative;
+    bottom: 100px;
+
+    font-size: 20px !important;
+    
+}
 @media (max-width: 767.98px) {
 
     .card{
@@ -33,4 +68,9 @@ a {
         width: 200px !important;
         height: 120px !important;
     }
+}
+
+.modal-content{
+    background-color: #5f5f5f !important;
+    color: #F6F6F6 !important;
 }
