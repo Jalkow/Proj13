@@ -13,7 +13,8 @@
     </head>
     <body>
         <?php
-
+        require "header.php";
+    
         require_once "config.php";
 
         $sql = "SELECT * FROM actu"; //sql request to get user infos
@@ -48,10 +49,7 @@
             </div>
         </div>
         <div class="parallax-window" data-parallax="scroll" data-image-src="img/media/img_fond.jpg"></div>
-        <div id="transi">
-
-        </div>
-       
+   
 
 
 
@@ -89,7 +87,7 @@
         </div>
 
 
-
+        <?php require "footer.php";?>
         <script src="js/jquery.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/parallax.js"></script>
