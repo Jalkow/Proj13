@@ -1,1 +1,17 @@
+.container{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.card{
+    margin-top: 20px;
+    width: 400px;
+}
+.card-img-top{
+    width: 300px !important;
+    margin-left: 50px;
+    margin-top: 10px;
+}
 
+.card-body{
+    text-align: center !important;
+}
