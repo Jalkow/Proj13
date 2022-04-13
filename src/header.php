@@ -6,8 +6,8 @@
             <img class="img-fluid" src="img/facebook.png" alt="test">
         </picture>
     </a>
-    <a class="nav-link" href="#">Home</a>
-    <a class="nav-link" href="#">Actualités</a>
+    <a class="nav-link" href="index.php">Home</a>
+    <a class="nav-link" href="actu.php">Actualités</a>
     <a class="nav-link" href="#">Contact</a>
     <div class="main-menu-icons">
         <a class="nav-link" href="">
