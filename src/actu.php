@@ -12,9 +12,8 @@
     </head>
     <body>
         <?php
-        require_once "header.php";
-    
         require_once "config.php";
+        require "header.php";
 
         $sql = "SELECT * FROM actu"; //sql request to get user infos
         $pre = $pdo->prepare($sql);

@@ -178,3 +178,45 @@ body{
         font-size: 3rem;
     }
 }
+
+.footer-images-container{
+    height: 60px;
+    width: 90px;
+}
+
+.footer-images-container img{
+    height: 100%;
+    width: 100%;
+}
+
+.footer-links{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer-links a{
+    font-size: 20px;
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #F6F6F6 !important;
+}
+
+.footer-copyright{
+    text-align: center;
+    margin-top: 60px;
+    color: #F6F6F6 !important;
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+.footer-PC{
+    display: none;
+    margin-top: 60px;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 1024px){
+    .footer-PC{
+        display: flex;
+    }
+}
