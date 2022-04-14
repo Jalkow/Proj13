@@ -12,20 +12,20 @@
     </head>
     <body>
         <?php
-        require "header.php";
+        require_once "header.php";
     
         require_once "config.php";
 
         $sql = "SELECT * FROM actu"; //sql request to get user infos
         $pre = $pdo->prepare($sql);
         $pre->execute();
-        $card = $pre->fetchAll(PDO::FETCH_ASSOC);
+        $arti = $pre->fetchAll(PDO::FETCH_ASSOC);
 
         $sql = "SELECT count(*) FROM actu"; //sql request to get user infos
         $pre = $pdo->prepare($sql);
         $pre->execute();
-        $cardCount = $pre->fetchAll(PDO::FETCH_ASSOC);
-        $maxCard = $cardCount[0]['count(*)'];
+        $artiCount = $pre->fetchAll(PDO::FETCH_ASSOC);
+        $maxarti = $artiCount[0]['count(*)'];
         ?>
 
         
@@ -33,16 +33,18 @@
         <div class="parallax-window" data-parallax="scroll" data-image-src="img/media/img_fond.jpg"></div>
         <div class="container" id="actuCard">
             <div class="row">
-            <?php for ($i=0; $maxCard > $i ; $i++) {?>
+            <?php for ($i=0; $maxarti > $i ; $i++) {?>
                 <div class="col-5 offset-1">
-                    <div class="card">
-                        <img src="<?php echo $card[$i]['news_img']; ?>" class="card-img-top" alt="aie">
+                    <div id="actu_card" class="card">
+                        <img id="actu_img" src="<?php echo $arti[$i]['news_img']; ?>" class="card-img-top" alt="aie">
                         <div class="card-body" >
-                            <p><?php echo $card[$i]['news_title']; ?></p>
+                            <p><?php echo $arti[$i]['news_title']; ?></p>
                         </div>
                     </div>
                     <img src="img/media/bulle_texte_2" alt="" id="card_buble">
-                    <button type="button" class="btn btn-primary">Read more</button>
+                    <div id="boutonreadmore">
+                        <a id="readMore" class="left" href="<?php echo "article.php?articleNum=".$arti[$i]['id_article'];?>">Read more</a>
+                    </div>
                 </div>
                 <?php } ?>
             </div>
@@ -70,11 +72,11 @@
         </div>
 
         <!-- trigger modal delete profile card -->
-        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelnews">
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDel">
             del news
         </button>
         <!-- modal delete profile card -->
-        <div class="modal fade" id="modalDelnews" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="modalDel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <?php require_once "deleteNews.php"; ?>

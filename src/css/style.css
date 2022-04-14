@@ -1,7 +1,7 @@
 body{
     background-color: #121212 !important;
     color: #F6F6F6 !important;
-    font-family: 'Rubik Wet Paint', cursive;
+    font-family: 'Covered By Your Grace', cursive;
 
 }
 
@@ -23,29 +23,48 @@ body{
 
 }
 
-.card{
+#actu_card{
     margin-top: 20px;
     width: 270px;
     background-color: transparent !important;
     border: 0 !important;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
 }
-.card-img-top{
-    width: 270px !important;
+#actu_img{
+    width: 400px;
+    height: auto;
     border-radius: 2.5rem !important;
 }
 
-.card-body{
-    text-align: center !important;
-}
 
 #card_buble{
-    width: 320px;
+    width: 450px;
     height: auto;
     z-index: -1;
     position: relative;
-    bottom: 190px;
-    right: 25px;
+    bottom: 250px;
+    right: 10px;
 }
+
+#boutonreadmore{
+    position: relative;
+    bottom: 350px;
+    left: 250px;
+}
+
+#readMore{
+    text-decoration: none;
+    color: #F6F6F6;
+    background-color: #953f95;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    border-radius: 1.5em;
+    padding: 12px;
+}
+
+
     
 #actuCard .btn-primary{
     background-color: rgb(189, 78, 170) !important;
@@ -57,6 +76,7 @@ body{
     font-size: 20px !important;
     
 }
+/*
 @media (max-width: 767.98px) {
 
     .card{
@@ -69,6 +89,30 @@ body{
         height: 120px !important;
     }
 }
+*/
+
+#article_card{
+    background-color: transparent !important;
+    border: 0 !important;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#article_img{
+    width: 500px;
+    height: auto;
+    border-radius: 2.5rem !important;
+}
+
+#article_description{
+    color: #F6F6F6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+
+
 
 .modal-content{
     background-color: #5f5f5f !important;
