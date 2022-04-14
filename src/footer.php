@@ -21,7 +21,9 @@
             <a href="">Changer de pays</a>
         </div>
         <div class="footer-PC">
-            <img class="footer-image" src="img/img_logo2.png" alt="">
+            <a href="index.php">
+                <img class="footer-image" src="img/img_logo2.png" alt="">
+            </a>
             <div class="footer-platforms">
                 <img class="footer-image" src="img/img_ps4.png" alt="">
                 <img class="footer-image" src="img/img_ps5.png" alt="">

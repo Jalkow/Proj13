@@ -1,8 +1,20 @@
 body{
     background-color: #121212 !important;
     color: #F6F6F6 !important;
-    font-family: 'Rubik Wet Paint', cursive;
+    font-family: 'Roboto' sans-serif !important;
 
+}
+
+h1, h2{
+    font-family: 'Covered By Your Grace', cursive;
+    text-align: center;
+    font-size: 80px !important;
+    margin-top: 5vh !important;
+    margin-bottom: 5vh !important;
+}
+
+.container-fluid{
+    margin-bottom: 5vh;
 }
 
 .parallax-window {
@@ -93,7 +105,8 @@ body{
 
 .logo img, .logo source, .main-menu-icons img{
     height: 100%;
-    min-height: 1vh;
+    min-height: 2vh;
+    min-width: 2vw;
 }
 
 .main-menu-icons{
@@ -119,7 +132,7 @@ body{
 
 .footer-images-container{
     height: 60px;
-    width: 90px;
+    width: 90px !important;
 }
 
 .footer-images-container img{
@@ -134,7 +147,6 @@ body{
 
 .footer-links a{
     font-size: 20px;
-    font-family: 'Roboto';
     text-decoration: none;
     color: #F6F6F6 !important;
 }
@@ -144,7 +156,6 @@ body{
     margin-top: 60px;
     color: #F6F6F6 !important;
     font-size: 20px;
-    font-family: 'Roboto';
 }
 
 .footer-PC{
@@ -156,5 +167,138 @@ body{
 @media screen and (min-width: 1024px){
     .footer-PC{
         display: flex;
+    }
+}
+
+.contact-about-container{
+    display: flex;
+    height: 20vh;
+    margin-bottom: 10vh;
+}
+
+.contact-about-container img, .contact-about-container .about-text-container-right, .contact-about-container .about-text-container-left{
+    align-self: flex-end;
+}
+
+.contact-about-container img{
+    height: 100%;
+    border-radius: 40px;
+    max-height: 20vh;
+}
+
+.about-text-container-right{
+    padding-left: 50px;
+    padding-right: 60px;
+    background-color: #acacac;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    height: 80% !important;
+    margin-left: -35px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.about-text-container-left{
+    padding: 50px;
+    background-color: #acacac;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    height: 80% !important;
+    margin-right: -35px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.contact-about-container p{
+    font-size: 16px;
+    color: black;
+}
+
+.founders-infos-container{
+    margin-bottom: 10vh;
+}
+
+.founder-col{
+    text-align: center;
+}
+
+.founder-col img{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 30%;
+}
+
+.founder-col h3{
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 25px !important;
+    margin-top: 2vh;
+}
+
+.founder-col p{
+    font-size: 17px;
+}
+
+.contact-infos-container{
+    text-align: center;
+    background-color: #acacac;
+    margin-bottom: 20vh;
+}
+
+.infos-col img{
+    width: 5vw;
+    height: 5vw;
+}
+
+.infos-col{
+    margin-top: 5vh !important;
+    margin-bottom: 5vh !important;
+}
+
+.infos-col p{
+    margin-bottom: 0px !important;
+}
+
+.contact-infos-container p{
+    color: black;
+    font-size: 17px;
+}
+
+.contact-infos-container a{
+    font-size: 17px;
+    color: #953f95;
+}
+
+@media screen and (min-width: 1024px){
+    .contact-about-container{
+        height: 40vh;
+    }
+
+    .contact-about-container img{
+        max-height: 40vh;
+    }
+
+    .contact-about-container p{
+        font-size: 30px;
+    }
+
+    .founder-col h3{
+        font-size: 50px !important;
+    }
+
+    .founder-col p{
+        font-size: 25px !important;
+    }
+
+    .contact-infos-container p{
+        font-size: 30px;
+    }
+    .contact-infos-container a{
+        font-size: 25px;
     }
 }
