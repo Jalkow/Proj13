@@ -94,13 +94,12 @@ body{
 #article_card{
     background-color: transparent !important;
     border: 0 !important;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
 }
 
 #article_img{
-    width: 500px;
+    width: 700px;
     height: auto;
     border-radius: 2.5rem !important;
 }
@@ -109,6 +108,21 @@ body{
     color: #F6F6F6;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
+    text-align: center;
+}
+
+#add-news{
+    display: flex;
+    flex-direction: column;
+}
+
+#modal_article_description{
+    height: 200px;
+    width: 450px;
+}
+
+#modal_article{
+    width: 450px;
 }
 
 
@@ -153,6 +167,10 @@ body{
 .main-menu-icons img{
     max-height: 5vh;
     max-width: 5vw;
+}
+
+.modal-footer{
+    border: 0 !important;
 }
 
 @media screen and (min-width: 1200px){

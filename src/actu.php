@@ -66,9 +66,6 @@
                     <?php require_once "createNews.php"; ?>
                 </div>
             </div>
-            <div class="modal-footer">
-                <a href="#footer" class="modal-close waves-effect waves-green btn-flat">Close</a>
-            </div>
         </div>
 
         <!-- trigger modal delete profile card -->
@@ -81,9 +78,6 @@
                 <div class="modal-content">
                     <?php require_once "deleteNews.php"; ?>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <a href="#footer" class="modal-close waves-effect waves-green btn-flat">Close</a>
             </div>
         </div>
 

@@ -12,7 +12,6 @@
             <option name ="michel" value=<?php echo $article['news_title'] ?>><?php echo $article['news_title'] ?></option>
         <?php } ?>
     </select>
-    <label>Article to delete</label>
   </div>
-    <button type="submit" name="action">Delete</button>
+    <button class="btn btn-danger" type="submit" name="action">Delete</button>
 </form>
