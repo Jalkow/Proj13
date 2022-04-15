@@ -1,4 +1,8 @@
 <form method="post" action="signup.php" id="sign up">
+    <?php if(isset($_SESSION['errorMail'])){
+        ?><p>Error, mail and confirm mail are not matching</p><?php
+    }
+    ?>
     <h3>email</h3>
     <input type='email' name='email' />
     <h3>confirm email</h3>
@@ -18,7 +22,8 @@
     <h3>adress</h3>
     <input type='text' name='adress' />  
     <h3>phone</h3>
-    <input type='number' name='phone' required minlength="10" maxlength="10"/>
+    <input type='tel' name='phone' />
+
 
     <div class="modal-footer">
         <a class="btn btn-success" onclick="document.getElementById('sign up').submit()"class="modal-close waves-effect waves-red btn-flat ">sign up</a>
