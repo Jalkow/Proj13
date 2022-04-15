@@ -8,9 +8,15 @@ body{
 h1, h2{
     font-family: 'Covered By Your Grace', cursive;
     text-align: center;
-    font-size: 80px !important;
+    font-size: 40px !important;
     margin-top: 5vh !important;
     margin-bottom: 5vh !important;
+}
+
+@media screen and (min-width: 1024px){
+    h1, h2{
+        font-size: 80px !important;
+    }
 }
 
 .container-fluid{
@@ -397,5 +403,41 @@ footer{
 
     .mentions-container p{
         font-size: 30px;
+    }
+}
+
+#connect-menu-title{
+    margin-top: 40vh !important;
+}
+
+.connect-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40vh;
+}
+
+.connect-menu .menu-button1, .connect-menu .menu-button2{
+    text-align: center;
+    color: white;
+    width: 100%;
+    border-radius: 40px;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 5vh;
+}
+
+.connect-menu .menu-button1{
+    background-color: #953f95;
+}
+
+.connect-menu .menu-button2{
+    background-color: #1a2b49;
+}
+
+@media screen and (min-width: 1024px){
+    .connect-menu .menu-button1, .connect-menu .menu-button2{
+        font-size: 35px;
     }
 }

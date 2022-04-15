@@ -13,9 +13,12 @@
         <a class="nav-link" href="">
             <img src="img/panier_blanc.png" alt="cart icon">
         </a>
-        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalConnexion">
+        <a class="nav-link" href="connect-menu.php">
             <img src="img/picto_login.png" alt="login icon">
         </a>
+        <!-- <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalConnexion">
+            <img src="img/picto_login.png" alt="login icon">
+        </a> -->
     </div>
     
     <div class="modal fade" id="modalConnexion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
