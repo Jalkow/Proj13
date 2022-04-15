@@ -11,10 +11,38 @@
     <a class="nav-link" href="#">Contact</a>
     <div class="main-menu-icons">
         <a class="nav-link" href="">
-            <img src="img/panier_blanc.png" alt="">
+            <img src="img/panier_blanc.png" alt="cart icon">
         </a>
-        <a class="nav-link" href="">
-            <img src="img/picto_login.png" alt="">
+        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalConnexion">
+            <img src="img/picto_login.png" alt="login icon">
         </a>
     </div>
+    
+    <div class="modal fade" id="modalConnexion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <?php require_once "connexion.php"; ?>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalInscription" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <?php require_once "inscription.php"; ?>
+            </div>
+        </div>
+    </div>
+    <?php
+
+    if(isset($_SESSION['user'])){
+        //check if admin or not
+        if($_SESSION['user']['admin']==2){?>
+        
+            <a class="btn btn-success" href="adminPanel.php">admin panel</a>
+
+    <?php
+        }
+    }
+    ?>
+
 </div>
