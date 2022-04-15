@@ -5,7 +5,7 @@
   <input type='password' name='password' />
   <label >Password</label>
   <div>
-    <p>You are not register yet ?</p><a data-bs-toggle="modal" data-bs-target="#modalInscription">sign up !</a> 
+    <p>You are not register yet ?</p><a class="btn" data-bs-toggle="modal" data-bs-target="#modalInscription">sign up !</a> 
   </div>
   <div>
     <a class="btn" href="signout.php">Log out</a></li>

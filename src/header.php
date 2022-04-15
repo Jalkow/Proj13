@@ -8,7 +8,7 @@
     </a>
     <a class="nav-link" href="index.php">Home</a>
     <a class="nav-link" href="actu.php">Actualités</a>
-    <a class="nav-link" href="#">Contact</a>
+    <a class="nav-link" href="contact.php">Contact</a>
     <div class="main-menu-icons">
         <a class="nav-link" href="">
             <img src="img/panier_blanc.png" alt="cart icon">

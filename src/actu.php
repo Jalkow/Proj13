@@ -8,7 +8,7 @@
 
         <link rel="stylesheet" href="css/style.css">
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <title>Coopni</title>
+        <title>Coopni Studio</title>
     </head>
     <body>
         <?php

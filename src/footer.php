@@ -1,6 +1,6 @@
 <footer>
     <div class="container-fluid">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center footer-social-medias">
             <a class="col-1 footer-images-container" href="">
                 <img src="img/twitter.png" alt="">
             </a>
@@ -12,16 +12,18 @@
             </a>
         </div>
         <div class="footer-links">
-            <a href="">À propos de nous ● </a>
-            <a href="">Assistance ● </a>
-            <a href="">Mentions légales</a>
+            <a href="contact.php">À propos de nous ● </a>
+            <a href="contact.php#contact-infos">Assistance ● </a>
+            <a href="mentions.php">Mentions légales</a>
         </div>
         <div class="footer-links">
             <a href="">Gestion des cookies ● </a>
             <a href="">Changer de pays</a>
         </div>
         <div class="footer-PC">
-            <img class="footer-image" src="img/img_logo2.png" alt="">
+            <a href="index.php">
+                <img class="footer-image" src="img/img_logo2.png" alt="">
+            </a>
             <div class="footer-platforms">
                 <img class="footer-image" src="img/img_ps4.png" alt="">
                 <img class="footer-image" src="img/img_ps5.png" alt="">
