@@ -130,9 +130,14 @@ h1, h2{
     }
 }
 
+footer{
+    background-color: #0E0E0E;
+}
+
 .footer-images-container{
     height: 60px;
     width: 90px !important;
+    margin-top: 5vh;
 }
 
 .footer-images-container img{
@@ -300,5 +305,35 @@ h1, h2{
     }
     .contact-infos-container a{
         font-size: 25px;
+    }
+}
+
+.mentions-section{
+    text-align: center;
+    margin-bottom: 20vh;
+}
+
+#mentions-title{
+    margin-bottom: 10vh !important;
+    font-size: 40px !important;
+}
+
+.mentions-container{
+    background-color: #acacac;
+    margin-bottom: 10vh;
+}
+
+.mentions-container p{
+    padding: 5vh 5vw;
+    color: black;
+}
+
+@media screen and (min-width: 1024px){
+    #mentions-title{
+        font-size: 80px !important;
+    }
+
+    .mentions-container p{
+        font-size: 30px;
     }
 }

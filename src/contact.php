@@ -62,7 +62,7 @@
                 </div>
             </div>
 
-            <div class="contact-infos-container">
+            <div id="contact-infos" class="contact-infos-container">
                 <p>NOTRE ADRESSE</p>
                 <p>OÙ EST-CE QUE VOUS POUVEZ NOUS TROUVER</p>
 
