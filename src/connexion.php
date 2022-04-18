@@ -14,10 +14,7 @@
         <title>Coopni Studio</title>
     </head>
   <body>
-  <?php require "header.php";
-   if($_SESSION["error"]==1){?>
-    <p>Utilisateur ou mot de passe incorrect !</p>
-  <?php}?>
+  
     <div class="container">
       <div class="row">
         <div class="col-6 offset-3">
