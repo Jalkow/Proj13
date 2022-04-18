@@ -14,15 +14,18 @@
         <title>Coopni Studio</title>
     </head>
     <body>
-        <?php require "header.php";?>
+        <?php 
+        require "header.php";
+        $sql = "SELECT * FROM user"; //sql request to get user infos
+        $pre = $pdo->prepare($sql);
+        $pre->execute();
+        $user = $pre->fetchAll(PDO::FETCH_ASSOC);
+        ?>
         <div class="container-fluid">
-            <h1 id="connect-menu-title">CONNECTEZ-V0US</h1>
+            <h1 id="connect-menu-title"><?php echo $_SESSION['user']['name']; ?></h1>
 
             <div class="row justify-content-center">
                 <div class="col-sm-10 col-lg-4 connect-menu">
-                    <a class="menu-button1" href="connexion.php">CONNECTEZ-VOUS</a>
-                    <a class="menu-button2" href="inscription.php">INSCRIPTION</a>
-                    <a class="menu-button1" href="buying.php">CONTINUER EN TANT QU'INVITE</a>
                     <a class="menu-button2" href="signout.php">LOG OUT</a></li>
                 </div>
             </div>

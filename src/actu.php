@@ -29,30 +29,27 @@
 
         
         
-        <div class="parallax-window" data-parallax="scroll" data-image-src="img/media/img_fond.jpg"></div>
+        <h2>Actualités</h2>        
+
         <div class="container" id="actuCard">
             <div class="row">
             <?php for ($i=0; $maxarti > $i ; $i++) {?>
-                <div class="col-5 offset-1">
+                <div id="wui" class="col-5 offset-1">
                     <div id="actu_card" class="card">
                         <img id="actu_img" src="<?php echo $arti[$i]['news_img']; ?>" class="card-img-top" alt="aie">
                         <div class="card-body" >
                             <p><?php echo $arti[$i]['news_title']; ?></p>
                         </div>
                     </div>
-                    <img src="img/media/bulle_texte_2" alt="" id="card_buble">
+                    <img src="img/bulle_texte_2" alt="" id="card_buble">
                     <div id="boutonreadmore">
-                        <a id="readMore" class="left" href="<?php echo "article.php?articleNum=".$arti[$i]['id_article'];?>">Read more</a>
+                        <a id="readMore"  href="<?php echo "article.php?articleNum=".$arti[$i]['id_article'];?>">Read more</a>
                     </div>
                 </div>
                 <?php } ?>
             </div>
         </div>
-        <div class="parallax-window" data-parallax="scroll" data-image-src="img/media/img_fond.jpg"></div>
-   
-
-
-
+        
 
         <!-- trigger modal create profile card -->
         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalnews">

@@ -12,8 +12,17 @@
     <div class="main-menu-icons">
         <a class="nav-link" href="">
             <img src="img/panier_blanc.png" alt="cart icon">
-        </a>
-        <a class="nav-link" href="connect-menu.php">
+        </a>        
+        <?php
+        $_hrefValue;
+        if(isset($_SESSION['user'])){ 
+            $_hrefValue = "account.php";
+        }
+        else{ 
+            $_hrefValue = "connect-menu.php" ;
+        }
+        ?>
+        <a class="nav-link"  href=<?php echo $_hrefValue ?>>
             <img src="img/picto_login.png" alt="login icon">
         </a>
         <!-- <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalConnexion">

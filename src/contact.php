@@ -12,18 +12,28 @@
         <title>Coopni Studio</title>
     </head>
     <body>
-        <?php require "header.php"; ?>
+    <?php
+        require_once "config.php";
+        require "header.php";
+
+        $sql = "SELECT * FROM contact"; //sql request to get user infos
+        $pre = $pdo->prepare($sql);
+        $pre->execute();
+        $conta = $pre->fetchAll(PDO::FETCH_ASSOC);
+        ?>
+
+
         <div class="container-fluid">
            <h1>NOTRE STUDIO</h1>
 
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-sm-11">
                     <div class="contact-about-container">
-                        <img class="col-6" src="img/img_ns1.jpg" alt="">
+                        <img class="col-6" src="<?php echo $conta[0]['img1']; ?>" alt="">
                         <div class="col-6 about-text-container-right">
-                           <p>
-                               ceci est un test EH OH  ezaeazceci est un test EH OH  ezaeazceci est un test EH OH  ezaeazceci est un test EH OH  ezaeazceci est un test EH OH  ezaeazceci est un test EH OH  ezaeazceci est un test EH OH  ezaeazceci est un test EH OH  ezaeazceci est un test EH OH  ezaeazceci est un test EH OH  ezaeazceci est un test EH OH  ezaeaz
-                           </p>
+                            <p>
+                                <?php echo $conta[0]['text1']; ?>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -33,11 +43,11 @@
                 <div class="col-lg-8 col-sm-11">
                     <div class="contact-about-container">
                         <div class="col-6 about-text-container-left">
-                           <p>
-                               ceci est un test EH OH  ezaeazceci est un test EH OH  ezaeazceci est un test EH OH  ezaeazceci est un test EH OH  ezaeazceci est un test EH OH  ezaeazceci est un test EH OH  ezaeazceci est un test EH OH  ezaeazceci est un test EH OH  ezaeazceci est un test EH OH  ezaeazceci est un test EH OH  ezaeazceci est un test EH OH  ezaeaz
-                           </p>
+                            <p>
+                                <?php echo $conta[0]['text2']; ?>
+                            </p>
                         </div>
-                        <img class="col-6" src="img/img_ns2.jpg" alt="">
+                        <img class="col-6" src="<?php echo $conta[0]['img2']; ?>" alt="">
                     </div>
                 </div>
             </div>
@@ -70,21 +80,21 @@
                     <div class="infos-col col-3">
                         <img src="img/phone-call.png" alt="">
                         <p>NOUS APPELER</p>
-                        <a href="tel:+33677890001">0677890001</a>
+                        <a href="tel:+33677890001"><?php echo $conta[0]['phone']; ?></a>
                     </div>
                     <div class="infos-col col-3">
                         <img src="img/email.png" alt="">
                         <p>ADRESSE EMAIL</p>
-                        <a href="mailto:coopnistudio@gmail.com?subject=coopni studio page contact">coopnistudio@gmail.com</a>
+                        <a href="mailto:<?php echo $conta[0]['email']; ?>?subject=coopni studio page contact"><?php echo $conta[0]['email']; ?></a>
                     </div>
                     <div class="infos-col col-3">
                         <img src="img/linkedin.png" alt="">
                         <p>LINKEDIN</p>
-                        <a href="https://www.linkedin.com/company/riot-games/">coopnistudio</a>
+                        <a href="<?php echo $conta[0]['linkedin']; ?>">coopnistudio</a>
                     </div>
                 </div>
 
-                <p>Un problème ? Contactez-nous à cette adresse : <a href="mailto:coopnistudio.maintenance@gmail.com?subject=coopni help needed">coopnistudio.maintenance@gmail.com</a></p>
+                <p>Un problème ? Contactez-nous à cette adresse : <a href="mailto:<?php echo $conta[0]['emailSAV']; ?>?subject=coopni help needed"><?php echo $conta[0]['emailSAV']; ?></a></p>
             </div>
         </div>
         
