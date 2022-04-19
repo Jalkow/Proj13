@@ -12,6 +12,13 @@ h1, h2{
     margin-bottom: 5vh !important;
 }
 
+.parallax-window {
+    min-height: 100%;
+    background: transparent;
+} 
+
+
+
 @media screen and (min-width: 1024px){
     h1, h2{
         font-size: 80px !important;
