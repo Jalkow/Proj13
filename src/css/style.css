@@ -439,37 +439,6 @@ hr {
     opacity: 1!important;
 }
 
-#logIn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#BTN{
-    text-decoration: none;
-    color: #F6F6F6;
-    background-color: #953f95;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    border-radius: 1.5em;
-}
-
-#signUpbtn{
-    color: #F6F6F6;
-}
-
-#signUp{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-
-#signUpbtn:hover{
-    color: #198754;
-}
-
 #connect-menu-title{
     margin-top: 40vh !important;
 }

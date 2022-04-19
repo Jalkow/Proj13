@@ -13,43 +13,28 @@
         <a class="nav-link" href="">
             <img src="img/panier_blanc.png" alt="cart icon">
         </a>        
-        <?php
-        $_hrefValue;
-        if(isset($_SESSION['user'])){ 
-            $_hrefValue = "account.php";
-        }
-        else{ 
-            $_hrefValue = "connect-menu.php" ;
-        }
-        ?>
 
-        <div class="dropdown">
-            <a href="" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+        <?php
+        if(isset($_SESSION['user'])){ ?>
+            <div class="dropdown">
+                <a href="" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/picto_login.png" alt="login icon">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="profile.php"><?php echo $_SESSION['user']['name'] ?></a></li>
+                    <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                    <li><a class="dropdown-item" href="#">Order</a></li>
+                </ul>
+            </div>
+        <?php } 
+        else{ ?>
+            <a class="nav-link" href="connect-menu.php">
                 <img src="img/picto_login.png" alt="login icon">
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <?php if(isset($_SESSION['user'])){ ?><li><a id="username"><?php echo $_SESSION['user']['name'] ?></a></li> <?php } ?>
-                <?php if(isset($_SESSION['user'])){ ?> <li><a class="dropdown-item" href="profile.php">Profile</a></li> <?php }else{ ?> <li><a class="dropdown-item" href="connect-menu.php">Connexion</a></li> <?php } ?>
-                
-                <li><a class="dropdown-item" href="#">Order</a></li>
-            </ul>
-        </div>
+        <?php } ?>
     </div>
-    
-    <div class="modal fade" id="modalConnexion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <?php require_once "connexion.php"; ?>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="modalInscription" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <?php require_once "inscription.php"; ?>
-            </div>
-        </div>
-    </div>
+
+
     <?php
 
     if(isset($_SESSION['user'])){
