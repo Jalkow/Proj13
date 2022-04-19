@@ -188,6 +188,17 @@ h1, h2{
     max-width: 5vw;
 }
 
+.dropdown-item{
+    color: #121212 !important;
+    background-color: #F6F6F6;
+}
+
+#username{
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
 .modal-footer{
     border: 0 !important;
 }
@@ -415,6 +426,50 @@ footer{
     }
 }
 
+
+input{
+    border-radius: 0.5em;
+    border: 0!important;
+}
+
+hr {
+    background-color: #F6F6F6;
+    height: 3px!important;
+    width: 200px;
+    opacity: 1!important;
+}
+
+#logIn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#BTN{
+    text-decoration: none;
+    color: #F6F6F6;
+    background-color: #953f95;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 1.5em;
+}
+
+#signUpbtn{
+    color: #F6F6F6;
+}
+
+#signUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#signUpbtn:hover{
+    color: #198754;
+}
+
 #connect-menu-title{
     margin-top: 40vh !important;
 }
@@ -624,4 +679,25 @@ footer{
     .signup-checkboxes-container .form-check, .user-infos-container input, .user-infos-container .input-group-text, .validate-button a, .modify-button a{
         font-size: 35px !important;
     }
+}
+
+#userinfo{
+    text-align: center;
+    font-size: 20px;
+}
+
+#infoBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#displayUserInfo{
+    width: 650px;
+    background-color: #222222;
+    color: #F6F6F6;
+    border-radius: 1em;
+    border: solid;
+    border-color: #f6f6f6;
+    border-width: 0.5px;
 }

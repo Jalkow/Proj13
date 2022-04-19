@@ -22,23 +22,18 @@
             $_hrefValue = "connect-menu.php" ;
         }
         ?>
-        <a class="nav-link"  href=<?php echo $_hrefValue ?>>
-            <img src="img/picto_login.png" alt="login icon">
-            <?php if(isset($_SESSION['user'])){ 
-            ?><p>Bonjour gertrude</p><?php
-            }?>
-        </a>
+
         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>            
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <a href="" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="img/picto_login.png" alt="login icon">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <?php if(isset($_SESSION['user'])){ ?><li><a id="username"><?php echo $_SESSION['user']['name'] ?></a></li> <?php } ?>
+                <?php if(isset($_SESSION['user'])){ ?> <li><a class="dropdown-item" href="account.php">Profile</a></li> <?php }else{ ?> <li><a class="dropdown-item" href="connect-menu.php">Connexion</a></li> <?php } ?>
+                
+                <li><a class="dropdown-item" href="#">Order</a></li>
             </ul>
         </div>
-        <!-- <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalConnexion">
-            <img src="img/picto_login.png" alt="login icon">
-        </a> -->
     </div>
     
     <div class="modal fade" id="modalConnexion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -60,9 +55,7 @@
     if(isset($_SESSION['user'])){
         //check if admin or not
         if($_SESSION['user']['admin']==2){?>
-        
             <a class="btn btn-success" href="adminPanel.php">admin panel</a>
-
     <?php
         }
     }

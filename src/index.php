@@ -11,6 +11,7 @@
         <title>Coopni Studio</title>
     </head>
     <body>
+        <?php require "config.php";?>
         <?php require "header.php";?>
         <div class="parallax-window" data-parallax="scroll" data-image-src="img/img_fond.jpg"></div> 
         <div class="container">

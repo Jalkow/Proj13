@@ -15,19 +15,40 @@
     </head>
     <body>
         <?php 
+        require_once "config.php";
         require "header.php";
         $sql = "SELECT * FROM user"; //sql request to get user infos
         $pre = $pdo->prepare($sql);
         $pre->execute();
         $user = $pre->fetchAll(PDO::FETCH_ASSOC);
         ?>
-        <div class="container-fluid">
-            <h1 id="connect-menu-title"><?php echo $_SESSION['user']['name']; ?></h1>
-
-            <div class="row justify-content-center">
-                <div class="col-sm-10 col-lg-4 connect-menu">
-                    <a class="menu-button2" href="signout.php">LOG OUT</a></li>
+        <div class="container-fluid" id="userinfo">
+            <div class="row">
+                <div class="col-8 offset-2" id="infoBox">
+                    <h3>NAME</h3>
+                    <p id="displayUserInfo"><?php echo $_SESSION['user']['name']; ?></p>
+                    <h3>LAST NAME</h3>
+                    <p id="displayUserInfo"><?php echo $_SESSION['user']['last_name']; ?></p>
+                    <h3>EMAIL</h3>
+                    <p id="displayUserInfo"><?php echo $_SESSION['user']['email']; ?></p>
+                    <h3>PASSWORD</h3>
+                    <p id="displayUserInfo"><?php echo $_SESSION['user']['password']; ?></p>
+                    <h3>COUNTRY</h3>
+                    <p id="displayUserInfo"><?php echo $_SESSION['user']['country']; ?></p>
+                    <h3>CITY</h3>
+                    <p id="displayUserInfo"><?php echo $_SESSION['user']['city']; ?></p>
+                    <h3>POSTAL CODE</h3>
+                    <p id="displayUserInfo"><?php echo $_SESSION['user']['postal_code']; ?></p>
+                    <h3>ADRESS</h3>
+                    <p id="displayUserInfo"><?php echo $_SESSION['user']['adress']; ?></p>
+                    <h3>PHONE</h3>
+                    <p id="displayUserInfo"><?php echo $_SESSION['user']['phone']; ?></p>
                 </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-10 col-lg-4 connect-menu">
+                <a class="menu-button2" href="signout.php">LOG OUT</a></li>
             </div>
         </div>
         
