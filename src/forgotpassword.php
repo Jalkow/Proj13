@@ -15,7 +15,22 @@
     </head>
     <body>
         <?php require "header.php";?>
-        
+
+        <h1>MOT DE PASSE OUBLIÉ</h1>
+
+        <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 ">
+                <div class="row">
+                    <div class="col-12 connexion-form-input">
+                        <div id=picto_login-black>
+                            <img src="img/picto_login.png" alt="">
+                        </div>
+                        <input type="text" class="form-control" placeholder="Email" aria-label="email">
+                    </div>
+                    <p>Un email sera envoyé à cette adresse mail</p>
+                </div>
+            </div>
+        </div>
 
         <?php require "footer.php";?>
         <script src="js/jquery.js"></script>
