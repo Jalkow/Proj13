@@ -8,7 +8,7 @@ body{
 h1, h2{
     font-family: 'Covered By Your Grace', cursive;
     text-align: center;
-    font-size: 40px !important;
+    font-size: 50px !important;
     margin-top: 5vh !important;
     margin-bottom: 5vh !important;
 }
@@ -321,6 +321,14 @@ footer{
     text-align: center;
     background-color: #acacac;
     margin-bottom: 20vh;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+
+.contact-infos-container p{
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
 }
 
 .infos-col img{
@@ -329,12 +337,13 @@ footer{
 }
 
 .infos-col{
-    margin-top: 5vh !important;
-    margin-bottom: 5vh !important;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
 }
 
 .infos-col p{
     margin-bottom: 0px !important;
+    margin-top: 0px !important;
 }
 
 .contact-infos-container p{
@@ -439,5 +448,180 @@ footer{
 @media screen and (min-width: 1024px){
     .connect-menu .menu-button1, .connect-menu .menu-button2{
         font-size: 35px;
+    }
+}
+
+.connexion-form-container{
+    background-color: #acacac;
+    border-radius: 50px;
+}
+
+.other-connections-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 7vh;
+}
+
+.google-connect{
+    background-color: #db4a39;
+}
+
+.facebook-connect{
+    background-color: #3b5998;
+    margin-left: -8vw;
+}
+
+.facebook-connect a{
+    margin-left: 8vw;
+}
+
+.other-connections-buttons div{
+    text-align: center;
+    width: 45%;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.other-connections-buttons a{
+    text-decoration: none;
+    color: #F6F6F6;
+    font-weight: bold;
+}
+
+.connexion-form-input{
+    background-color: #c4c4c4;
+    margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
+}
+
+.connexion-form-input img{
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #acacac;
+}
+
+#picto_login-black{
+    height: 60px;
+    width: 60px;
+    flex-shrink: 0;
+    margin: 10px;
+    padding: 10px;
+    background-color: #acacac;
+}
+
+#picto_login-black img{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(13%) saturate(8%) hue-rotate(55deg) brightness(124%) contrast(86%);
+}
+
+.connexion-form-input input{
+    background-color: #c4c4c4 !important;
+    border: 0px !important;
+}
+
+.connexion-form-link{
+    display: flex;
+    justify-content: end;
+}
+
+.connexion-form-link a{
+    color: #953f95;
+    padding-right: 5vw !important;
+}
+
+.connexion-form-button{
+    background-color: #953f95;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    padding: 20px;
+}
+
+.connexion-form-button a{
+    color: #F6F6F6;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 20px;
+}
+
+@media screen and (min-width: 1024px){
+    .other-connections-buttons a, .connexion-form-link a, .connexion-form-button a{
+        font-size: 35px;
+    }
+}
+
+.user-infos-container{
+    background-color: #202020;
+    padding-top: 5vh;
+}
+
+.user-infos-container .row{
+    background-color: #c4c4c4;
+    margin-bottom: 1vh;
+}
+
+.user-infos-container input, .user-infos-container .input-group-text{
+    background-color: transparent;
+    border: none;
+    font-size: 13px !important;
+}
+
+.signup-checkboxes-container{
+    margin-top: 3vh;
+}
+
+.signup-checkboxes-container .form-check{
+    display: flex !important;
+    align-items: center !important;
+    color: #0E0E0E;
+    font-size: 13px;
+}
+
+.signup-checkboxes-container input{
+    background-color: #f6f6f6;
+    border-radius: 15px !important;
+    margin-right: 2vw;
+}
+
+#validate-row{
+    background-color: transparent;
+    padding-bottom: 3vh;
+    padding-top: 2vh;
+}
+
+.validate-button, .modify-button{
+    border-radius: 50px;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    text-align: center;
+}
+
+.validate-button{
+    background-color: #1a2b49;
+}
+
+.modify-button{
+    background-color: #953f95;
+}
+
+.validate-button a, .modify-button a{
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #F6F6F6;
+}
+
+@media screen and (min-width: 1024px){
+    .signup-checkboxes-container .form-check, .user-infos-container input, .user-infos-container .input-group-text, .validate-button a, .modify-button a{
+        font-size: 35px !important;
     }
 }

@@ -17,7 +17,7 @@
            <h1>NOTRE STUDIO</h1>
 
             <div class="row justify-content-center">
-                <div class="col-lg-8 col-sm-11">
+                <div class="col-lg-8 col-11">
                     <div class="contact-about-container">
                         <img class="col-6" src="img/img_ns1.jpg" alt="">
                         <div class="col-6 about-text-container-right">
@@ -30,7 +30,7 @@
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-lg-8 col-sm-11">
+                <div class="col-lg-8 col-11">
                     <div class="contact-about-container">
                         <div class="col-6 about-text-container-left">
                            <p>

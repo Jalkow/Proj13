@@ -9,24 +9,28 @@
 
         <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
-
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Coopni Studio</title>
     </head>
     <body>
         <?php require "header.php";?>
-        <div class="container-fluid">
-            <h1 id="connect-menu-title">CONNECTEZ-V0US</h1>
 
-            <div class="row justify-content-center">
-                <div class="col-10 col-lg-4 connect-menu">
-                    <a class="menu-button1" href="connectpage.php">CONNECTEZ-VOUS</a>
-                    <a class="menu-button2" href="signuppage.php">INSCRIPTION</a>
-                    <a class="menu-button1" href="profile.php">CONTINUER EN TANT QU'INVITE</a>
+        <h1>MOT DE PASSE OUBLIÉ</h1>
+
+        <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 ">
+                <div class="row">
+                    <div class="col-12 connexion-form-input">
+                        <div id=picto_login-black>
+                            <img src="img/picto_login.png" alt="">
+                        </div>
+                        <input type="text" class="form-control" placeholder="Email" aria-label="email">
+                    </div>
+                    <p>Un email sera envoyé à cette adresse mail</p>
                 </div>
             </div>
         </div>
-        
 
         <?php require "footer.php";?>
         <script src="js/jquery.js"></script>
