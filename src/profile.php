@@ -113,18 +113,22 @@
             </div>
 
             <div id="validate-row" class="row">
-                <div class="modify-button col-3 col-lg-1 offset-4 offset-lg-8">
+                <div class="modify-button col-3 col-lg-2 offset-4 offset-lg-6">
                     <a href="">MODIFIER</a>
                 </div>
-                <div class="validate-button col-3 col-lg-1 offset-1">
+                <div class="validate-button col-3 col-lg-2 offset-1">
                     <a href="">VALIDER</a>
                 </div>
             </div>
         </div>
 
+        <div class="col-sm-10 col-lg-4 connect-menu">
+            <a class="menu-button2" href="signout.php">LOG OUT</a></li>
+        </div>
+
         <?php require "footer.php";?>
         <script src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
+        <script  src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

@@ -13,15 +13,6 @@
         <a class="nav-link" href="">
             <img src="img/panier_blanc.png" alt="cart icon">
         </a>        
-        <?php
-        $_hrefValue;
-        if(isset($_SESSION['user'])){ 
-            $_hrefValue = "account.php";
-        }
-        else{ 
-            $_hrefValue = "connect-menu.php" ;
-        }
-        ?>
 
         <div class="dropdown">
             <a href="" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
