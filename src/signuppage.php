@@ -53,7 +53,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">Mot de passe :</div>
                         </div>
-                        <input type='text' class="form-control" name='password'>
+                        <input type='password' class="form-control" name='password'>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">Code postal :</div>
                         </div>
-                        <input type='text' class="form-control" name='postalCode'>
+                        <input type='number' class="form-control" name='postalCode'>
                     </div>
                 </div>
                 <div class="col-6">
@@ -107,7 +107,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">Téléphone :</div>
                         </div>
-                        <input type='text' class="form-control" name='phone'>
+                        <input type='number' class="form-control" name='phone'>
                     </div>
                 </div>
             </div>
