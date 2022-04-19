@@ -14,7 +14,15 @@
         <title>Coopni Studio</title>
     </head>
     <body>
-        <?php require "header.php";?>
+        <?php 
+        require_once "config.php";
+        require "header.php";
+        
+        $sql = "SELECT * FROM user"; //sql request to get user infos
+        $pre = $pdo->prepare($sql);
+        $pre->execute();
+        $user = $pre->fetchAll(PDO::FETCH_ASSOC);
+        ?>
         
         <div class="row">
             <h1 class="col-6 col-lg-4 offset-1">MON PROFIL</h1>
@@ -27,7 +35,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">Adresse e-mail :</div>
                         </div>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" class="form-control" placeholder="<?php echo $_SESSION['user']['email']; ?>">
                     </div>
                 </div>
                 <div class="col-6">
@@ -35,7 +43,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">Confirmer e-mail :</div>
                         </div>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" class="form-control" placeholder="<?php echo $_SESSION['user']['email']; ?>">
                     </div>
                 </div>
             </div>
@@ -45,7 +53,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">Prénom :</div>
                         </div>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" class="form-control" placeholder="<?php echo $_SESSION['user']['name']; ?>">
                     </div>
                 </div>
                 <div class="col-6">
@@ -53,7 +61,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">Nom :</div>
                         </div>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" class="form-control" placeholder="<?php echo $_SESSION['user']['last_name']; ?>">
                     </div>
                 </div>
             </div>
@@ -63,7 +71,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">Adresse :</div>
                         </div>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" class="form-control" placeholder="<?php echo $_SESSION['user']['adress'];?>">
                     </div>
                 </div>
                 <div class="col-6">
@@ -71,7 +79,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">Ville :</div>
                         </div>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" class="form-control" placeholder="<?php echo $_SESSION['user']['city'];?>">
                     </div>
                 </div>
             </div>
@@ -81,7 +89,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">Code postal :</div>
                         </div>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" class="form-control" placeholder="<?php echo $_SESSION['user']['postal_code'];?>">
                     </div>
                 </div>
                 <div class="col-6">
@@ -89,7 +97,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">Pays :</div>
                         </div>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" class="form-control" placeholder="<?php echo $_SESSION['user']['country'];?>">
                     </div>
                 </div>
             </div>
@@ -99,7 +107,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">Téléphone :</div>
                         </div>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" class="form-control" placeholder="<?php echo $_SESSION['user']['phone'];?>">
                     </div>
                 </div>
             </div>

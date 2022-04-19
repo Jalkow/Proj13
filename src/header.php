@@ -29,7 +29,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <?php if(isset($_SESSION['user'])){ ?><li><a id="username"><?php echo $_SESSION['user']['name'] ?></a></li> <?php } ?>
-                <?php if(isset($_SESSION['user'])){ ?> <li><a class="dropdown-item" href="account.php">Profile</a></li> <?php }else{ ?> <li><a class="dropdown-item" href="connect-menu.php">Connexion</a></li> <?php } ?>
+                <?php if(isset($_SESSION['user'])){ ?> <li><a class="dropdown-item" href="profile.php">Profile</a></li> <?php }else{ ?> <li><a class="dropdown-item" href="connect-menu.php">Connexion</a></li> <?php } ?>
                 
                 <li><a class="dropdown-item" href="#">Order</a></li>
             </ul>

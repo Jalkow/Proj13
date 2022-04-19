@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
         <meta charset="UTF-8">
-        <!-- google font -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Roboto&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="css/style.css">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Coopni Studio</title>
     </head>
     <body>

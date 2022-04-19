@@ -20,8 +20,8 @@
 
             <div class="row justify-content-center">
                 <div class="col-sm-10 col-lg-4 connect-menu">
-                    <a class="menu-button1" href="connexion.php">CONNECTEZ-VOUS</a>
-                    <a class="menu-button2" href="inscription.php">INSCRIPTION</a>
+                    <a class="menu-button1" href="connectpage.php">CONNECTEZ-VOUS</a>
+                    <a class="menu-button2" href="signuppage.php">INSCRIPTION</a>
                     <a class="menu-button1" href="buying.php">CONTINUER EN TANT QU'INVITE</a>
                     <a class="menu-button2" href="signout.php">LOG OUT</a></li>
                 </div>
