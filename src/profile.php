@@ -113,10 +113,10 @@
             </div>
 
             <div id="validate-row" class="row">
-                <div class="modify-button col-3 col-lg-1 offset-4 offset-lg-8">
-                    <a href="">MODIFIER</a>
+                <div onclick="$('#profile-validate').css({visibility: 'visible'})" class="modify-button col-3 col-lg-1 offset-4 offset-lg-8">
+                    <a>MODIFIER</a>
                 </div>
-                <div class="validate-button col-3 col-lg-1 offset-1">
+                <div id="profile-validate" class="validate-button col-3 col-lg-1 offset-1">
                     <a href="">VALIDER</a>
                 </div>
             </div>
@@ -126,5 +126,6 @@
         <script src="js/jquery.js"></script>
         <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

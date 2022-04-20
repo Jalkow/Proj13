@@ -56,8 +56,8 @@
                     </form>
 
                     <div class="row justify-content-center">
-                        <div class="connexion-form-button col-lg-6 col-8">
-                            <a onclick="document.getElementById('logIn').submit()">CONNEXION</a>
+                        <div onclick="document.getElementById('logIn').submit()" class="connexion-form-button col-lg-6 col-8">
+                            <a>CONNEXION</a>
                         </div>
                     </div>
                 </div>
