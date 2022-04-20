@@ -32,30 +32,32 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-12 connexion-form-input">
-                            <div id=picto_login-black>
-                                <img src="img/picto_login.png" alt="">
+                    <form method="post" action="login.php" id="logIn">
+                        <div class="row">
+                            <div class="col-12 connexion-form-input">
+                                <div id=picto_login-black>
+                                    <img src="img/picto_login.png" alt="">
+                                </div>
+                                <input type="email" name="email" class="form-control" placeholder="Email" aria-label="email">
                             </div>
-                            <input type="text" class="form-control" placeholder="Email" aria-label="email">
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 connexion-form-input">
-                            <img src="img/cadenas.png" alt="">
-                            <input type="text" class="form-control" placeholder="Mot de passe" aria-label="password">
+                        <div class="row">
+                            <div class="col-12 connexion-form-input">
+                                <img src="img/cadenas.png" alt="">
+                                <input type="text" name='password' class="form-control" placeholder="Mot de passe" aria-label="password">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="connexion-form-link">
-                            <a href="forgotpassword.php">Mot de passe oublié ?</a>
+                        <div class="row">
+                            <div class="connexion-form-link">
+                                <a href="forgotpassword.php">Mot de passe oublié ?</a>
+                            </div>
                         </div>
-                    </div>
+                    </form>
 
                     <div class="row justify-content-center">
-                        <div class="connexion-form-button col-lg-6 col-8">
-                            <a href="">CONNEXION</a>
+                        <div onclick="document.getElementById('logIn').submit()" class="connexion-form-button col-lg-6 col-8">
+                            <a>CONNEXION</a>
                         </div>
                     </div>
                 </div>

@@ -11,9 +11,11 @@
         <title>Coopni Studio</title>
     </head>
     <body>
-        <?php require "config.php";?>
+        <?php require_once "config.php";?>
         <?php require "header.php";?>
-        <div class="parallax-window" data-parallax="scroll" data-image-src="img/img_fond.jpg"></div> 
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/img_fond.jpg">
+            
+        </div> 
         <div class="container">
             <div class="row">
                 <div class="col-10">
@@ -45,7 +47,7 @@
         <?php require "footer.php";?>
         <script src="js/jquery.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js/parallax.js"></script>
+        <script src="js/parallax.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/script.js"></script>
     </body>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : jeu. 14 avr. 2022 à 16:09
+-- Généré le : mar. 19 avr. 2022 à 13:57
 -- Version du serveur : 5.7.36
 -- Version de PHP : 7.4.26
 
@@ -34,17 +34,56 @@ CREATE TABLE IF NOT EXISTS `actu` (
   `news_img` char(250) NOT NULL,
   `news_description` varchar(10000) NOT NULL,
   PRIMARY KEY (`id_article`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `actu`
 --
 
 INSERT INTO `actu` (`id_article`, `news_title`, `news_img`, `news_description`) VALUES
-(1, 'news 1', 'img/media/img_art1.jpg', 'aled aled aled aled aled aled'),
-(5, 'zea', 'img/media/img_art3.jpg', 'zae'),
-(6, 'fge', 'img/media/img_art3.jpg', 'aeegrearg'),
-(8, 'erzt', 'img/media/img_art3.jpg', 'erzter');
+(1, 'efrgopihuj', 'img/img_art2', 'erghùmflsdj');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `contact`
+--
+
+DROP TABLE IF EXISTS `contact`;
+CREATE TABLE IF NOT EXISTS `contact` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `text1` varchar(255) NOT NULL,
+  `text2` varchar(255) NOT NULL,
+  `img1` varchar(255) NOT NULL,
+  `img2` varchar(255) NOT NULL,
+  `phone` int(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `emailSAV` varchar(255) NOT NULL,
+  `linkedin` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `contact`
+--
+
+INSERT INTO `contact` (`id`, `text1`, `text2`, `img1`, `img2`, `phone`, `email`, `emailSAV`, `linkedin`) VALUES
+(1, 'hello heloo hello heloo hello heloo hello heloo hello heloo hello heloo', 'ooleh olleh ooleh olleh ooleh olleh ooleh olleh ooleh olleh ooleh olleh', 'img/img_art1', 'img/img_art2', 677890001, 'coopnistudio@gmail.com', 'coopnistudio.maintenance@gmail.com', 'https://www.linkedin.com/company/riot-games/');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `page_picture`
+--
+
+DROP TABLE IF EXISTS `page_picture`;
+CREATE TABLE IF NOT EXISTS `page_picture` (
+  `name` varchar(255) NOT NULL,
+  `picture` varchar(255) NOT NULL,
+  `alt` varchar(255) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -54,25 +93,28 @@ INSERT INTO `actu` (`id_article`, `news_title`, `news_img`, `news_description`) 
 
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
-  `mail` char(250) NOT NULL,
+  `email` char(250) NOT NULL,
   `password` char(250) NOT NULL,
   `name` char(250) NOT NULL,
   `last_name` char(250) NOT NULL,
   `adress` char(250) NOT NULL,
   `city` char(250) NOT NULL,
-  `postal_code` int(255) NOT NULL,
+  `postal_code` int(255) NOT NULL DEFAULT '0',
   `country` char(250) NOT NULL,
   `phone` bigint(255) NOT NULL,
+  `admin` int(3) NOT NULL DEFAULT '0',
   `id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `user`
 --
 
-INSERT INTO `user` (`mail`, `password`, `name`, `last_name`, `adress`, `city`, `postal_code`, `country`, `phone`, `id`) VALUES
-('hcaroumbin@gaming.tech', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'michel', 'gertrude', 'quelquepar', 'ici', 1995, 'parlaba', 0, 1);
+INSERT INTO `user` (`email`, `password`, `name`, `last_name`, `adress`, `city`, `postal_code`, `country`, `phone`, `admin`, `id`) VALUES
+('ab@gmail.com', '1234', 'wui', 'iuw', 'ijo', 'es', 41, 'sdqqf', 1451, 2, 1),
+('az@gmail.com', 'fc1200c7a7aa52109d762a9f005b149abef01479', 'qg', 'qdgqd', 'dqfgq', 'qdfgdfg', 45145, 'dqfgdfq', 645156, 0, 2),
+('po@gmail.com', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'dfsg', 'dfsgsdf', 'dsfgsdf', 'gdfsgdfs', 987, 'dfsgdfsg', 41, 0, 3);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

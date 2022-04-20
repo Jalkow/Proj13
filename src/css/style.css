@@ -8,7 +8,7 @@ body{
 h1, h2{
     font-family: 'Covered By Your Grace', cursive;
     text-align: center;
-    font-size: 50px !important;
+    font-size: 40px !important;
     margin-top: 5vh !important;
     margin-bottom: 5vh !important;
 }
@@ -439,37 +439,6 @@ hr {
     opacity: 1!important;
 }
 
-#logIn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#BTN{
-    text-decoration: none;
-    color: #F6F6F6;
-    background-color: #953f95;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    border-radius: 1.5em;
-}
-
-#signUpbtn{
-    color: #F6F6F6;
-}
-
-#signUp{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-
-#signUpbtn:hover{
-    color: #198754;
-}
-
 #connect-menu-title{
     margin-top: 40vh !important;
 }
@@ -608,6 +577,10 @@ hr {
     margin: 20px;
 }
 
+.connexion-form-button:hover{
+    cursor: pointer;
+}
+
 @media screen and (min-width: 1024px){
     .other-connections-buttons a, .connexion-form-link a, .connexion-form-button a{
         font-size: 35px;
@@ -673,6 +646,14 @@ hr {
     text-decoration: none;
     font-weight: bold;
     color: #F6F6F6;
+}
+
+#profile-validate{
+    visibility: hidden;
+}
+
+.validate-button:hover, .modify-button:hover{
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1024px){

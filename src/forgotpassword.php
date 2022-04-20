@@ -29,6 +29,11 @@
                     </div>
                     <p>Un email sera envoyé à cette adresse mail</p>
                 </div>
+                <div class="row justify-content-end">
+                    <div class="modify-button col-4 col-lg-2">
+                        <a href="">ENVOYER</a>
+                    </div>
+                </div>
             </div>
         </div>
 

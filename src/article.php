@@ -1,4 +1,5 @@
 <html lang="en">
+ <?php require_once "config.php"; ?>
     <head>
         <meta charset="UTF-8">
         <!-- google font -->
@@ -13,8 +14,7 @@
     </head>
     <body>
         <?php
-        require_once "header.php";
-        require_once "config.php";
+        require "header.php";
 
         $articleId = $_GET['articleNum'];
         $sql ="SELECT * FROM actu WHERE id_article LIKE $articleId" ; 
@@ -28,8 +28,6 @@
         $artiCount = $pre->fetchAll(PDO::FETCH_ASSOC);
         $maxarti = $artiCount[0]['count(*)'];
         ?>
-        
-        <a href="actu.php">Back</a>
 
         <div class="container" id="artiCard">
             <div class="row">

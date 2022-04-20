@@ -23,7 +23,6 @@
                     <a class="menu-button1" href="connectpage.php">CONNECTEZ-VOUS</a>
                     <a class="menu-button2" href="signuppage.php">INSCRIPTION</a>
                     <a class="menu-button1" href="buying.php">CONTINUER EN TANT QU'INVITE</a>
-                    <a class="menu-button2" href="signout.php">LOG OUT</a></li>
                 </div>
             </div>
         </div>
