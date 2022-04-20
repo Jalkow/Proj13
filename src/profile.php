@@ -122,6 +122,10 @@
             </div>
         </div>
 
+        <div class="col-sm-10 col-lg-4 connect-menu">
+            <a class="menu-button2" href="signout.php">LOG OUT</a></li>
+        </div>
+
         <?php require "footer.php";?>
         <script src="js/jquery.js"></script>
         <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>

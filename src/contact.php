@@ -28,7 +28,6 @@
 
         <div class="container-fluid">
            <h1>NOTRE STUDIO</h1>
-
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-11">
                     <div class="contact-about-container">
