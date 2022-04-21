@@ -1,3 +1,4 @@
+<?php require_once "config.php"; ?>
 <div class="main-menu">
     <a class="logo nav-link" href="#">
         <picture>

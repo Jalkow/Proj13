@@ -845,3 +845,7 @@ hr {
     border-color: #f6f6f6;
     border-width: 0.5px;
 }
+
+#admin-panel{
+    text-align: center;
+}
