@@ -849,3 +849,13 @@ hr {
 #admin-panel{
     text-align: center;
 }
+
+#admin-panel-menu .row{
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+#admin-panel-menu button{
+    width: auto;
+    margin: 20px;
+}

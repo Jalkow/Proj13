@@ -16,7 +16,7 @@
         <?php require "header.php";?>
         <div class="parallax-window" data-parallax="scroll" data-image-src="img/img_fond.jpg">
             <div id="accueil-game-logo">
-                <img src="img/testlogo-removebg-preview.png" alt="logo how about">
+                <img src="img/gameLogo.png" alt="logo how about">
             </div>
             <div id="accueil-parallax-bottomrow" class="row">
                 <a id="accueil-parallax-arrow" class="col-3 col-lg-2 offset-5" href="#accueil-first-section">
