@@ -18,46 +18,64 @@
         <div id="admin-panel">
             <h2>ADMIN</h2>
             <div id="admin-panel-menu">
-                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalnews">
-                    add news
-                </button>
-                <!-- modal create profile card -->
-                <div class="modal fade" id="modalnews" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <?php require_once "addNews.php"; ?>
-                        </div>
-                    </div>
+                <div class="row">
+                    <h3>ACCUEIL</h3>
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalModifyNews">
+                        Modifier accueil
+                    </button>
                 </div>
-            
-                <!-- trigger modal delete profile card -->
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDel">
-                    del news
-                </button>
-                <!-- modal delete profile card -->
-                <div class="modal fade" id="modalDel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <?php require_once "deleteNews.php"; ?>
-                        </div>
-                    </div>
+                
+                <div class="row">
+                    <h3>ACTUALITES</h3>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalnews">
+                        ajouter news
+                    </button>
+                    
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDel">
+                        supprimer news
+                    </button>
+                    
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalModifyHome">
+                        Modifier news
+                    </button>
                 </div>
-        
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalMod">
-                    Modify news
-                </button>
-                <!-- modal delete profile card -->
-                <div class="modal fade" id="modalMod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <?php require_once "modifyNews.php"; ?>
-                        </div>
-                    </div>
+
+                
+            </div>
+        </div>
+        <!-- modal create profile card -->
+        <div class="modal fade" id="modalnews" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <?php require_once "addNews.php"; ?>
                 </div>
             </div>
         </div>
-        
+        <!-- modal delete profile card -->
+        <div class="modal fade" id="modalDel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <?php require_once "deleteNews.php"; ?>
+                </div>
+            </div>
+        </div>
 
+        <!-- modal delete profile card -->
+        <div class="modal fade" id="modalModifyHome" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <?php require_once "modifyHome.php"; ?>
+                </div>
+            </div>
+        </div>
+        <!-- modal delete profile card -->
+        <div class="modal fade" id="modalMod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <?php require_once "modifyNews.php"; ?>
+                </div>
+            </div>
+        </div>
 
         <?php require "footer.php"; ?>
         <script src="js/jquery.js"></script>
