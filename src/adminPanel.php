@@ -20,7 +20,7 @@
             <div id="admin-panel-menu">
                 <div class="row">
                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalnews">
-                        add news
+                        ajouter news
                     </button>
                     <!-- modal create profile card -->
                     <div class="modal fade" id="modalnews" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -33,7 +33,7 @@
 
                     <!-- trigger modal delete profile card -->
                     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDel">
-                        del news
+                        supprimer news
                     </button>
                     <!-- modal delete profile card -->
                     <div class="modal fade" id="modalDel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -45,13 +45,13 @@
                     </div>
 
                     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalMod">
-                        Modify news
+                        Modifier news
                     </button>
                     <!-- modal delete profile card -->
                     <div class="modal fade" id="modalMod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
-                                <?php require_once "modifyNews.php"; ?>
+                                <?php require_once "modifyHome.php"; ?>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="row">
                     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalMod">
-                        Modify news
+                        Modifier accueil
                     </button>
                     <!-- modal delete profile card -->
                     <div class="modal fade" id="modalMod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

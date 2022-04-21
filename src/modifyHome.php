@@ -1,39 +1,52 @@
-<form method="POST" action="sendModifyNews.php">
+<form id="modify-home" method="POST" action="sendModifyHome.php" enctype="multipart/form-data">
+    <h3>Modifier accueil</h3>
     <div class="input-field">
-        <select>
-            <option value="user" disabled selected>Choose article to modify</option>
-            
-            <?php $sql = "SELECT news_title FROM actu";
-            $pre = $pdo->prepare($sql);
-            $pre->execute();
-            $article = $pre->fetchAll(PDO::FETCH_ASSOC);
-
-
-            foreach($article as $article){ ?>
-                <option name ="michel" value=<?php echo $article['news_title'] ?>><?php echo $article['news_title'] ?></option>
-            <?php } ?>
-        </select>
+        <label>Image parallax :</label>
+        <input type="file" name="images[]">
     </div>
-    
-    
-        <form id="add-news" method="post" action="sendModifyNews.php" >
-            <h3>Add news</h3>
-            <div class="input-field">
-                <label >Img path</label>
-                <input id="modal_article" type="text" name='Picture' />
-            </div>
-            <div class="input-field">
-                <label >Article's title</label>
-                <input id="modal_article" type="text" name="Title">
-            </div>
-            <div class="input-field">
-                <label >Article's description</label>
-                <input id="modal_article_description" type="text" name="Description">
-            </div>
-            <div class="modal-footer">
-                <a class="btn btn-success" onclick="document.getElementById('add-news').submit()"class="modal-close waves-effect waves-red btn-flat ">Create</a>
-            </div>
-        </form>
-    
+    <div class="input-field">
+        <label>Logo jeu :</label>
+        <input type="file" name="images[]">
+    </div>
+    <div class="input-field">
+        <label>Titre 1er paragraphe</label>
+        <input id="modal_article" type="text" name="title1">
+    </div>
+    <div class="input-field">
+        <label>1er paragraphe</label>
+        <input id="modal_article_description" type="text" name="paragraph1">
+    </div>
+    <div class="input-field">
+        <label>Image 1er paragraphe :</label>
+        <input type="file" name="images[]">
+    </div>
+    <div class="input-field">
+        <label>Titre 2nd paragraphe</label>
+        <input id="modal_article" type="text" name="title2">
+    </div>
+    <div class="input-field">
+        <label>2nd paragraphe</label>
+        <input id="modal_article_description" type="text" name="paragraph2">
+    </div>
+    <div class="input-field">
+        <label>Image 2nd paragraphe :</label>
+        <input type="file" name="images[]">
+    </div>
+    <div class="input-field">
+        <label>Titre 3eme paragraphe</label>
+        <input id="modal_article" type="text" name="title3">
+    </div>
+    <div class="input-field">
+        <label>3eme paragraphe</label>
+        <input id="modal_article_description" type="text" name="paragraph3">
+    </div>
+    <div class="input-field">
+        <label>Image 3eme paragraphe :</label>
+        <input type="file" name="images[]">
+    </div>
+    <div class="input-field">
+        <label>Image bg paragraphes :</label>
+        <input type="file" name="images[]">
+    </div>
     <button class="btn btn-warning" type="submit" name="action">Modify</button>
 </form>
