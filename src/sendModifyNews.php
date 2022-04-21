@@ -4,9 +4,10 @@ require_once "config.php";
 /*$destinationCard = "img/".$_FILES['profilePicture']['name'];
 move_uploaded_file($_FILES['profilePicture']['tmp_name'],$destinationCard);*/
 
-$sql = "UPDATE INTO actu(news_title,news_img,news_description) VALUES(:title,:picture,:description)";
+$sql = "UPDATE INTO actu(news_title,news_img,news_description) VALUES(:NewTitle,:picture,:description) WHERE news_title = ':title' ";
 $dataBinded=array(
     ':title'=> $_POST['Title'],
+    ':NewTitle'=> $_POST['NewTitle'],
     ':picture'=>$_POST['Picture'],
     ':description'=>$_POST['Description']
 
