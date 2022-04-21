@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : jeu. 21 avr. 2022 à 13:28
+-- Généré le : jeu. 21 avr. 2022 à 14:03
 -- Version du serveur : 5.7.36
 -- Version de PHP : 7.4.26
 
@@ -29,6 +29,7 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `accueil`;
 CREATE TABLE IF NOT EXISTS `accueil` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `parallax_img` char(250) NOT NULL,
   `parallax_logo` char(250) NOT NULL,
   `title1` char(250) NOT NULL,
@@ -40,15 +41,16 @@ CREATE TABLE IF NOT EXISTS `accueil` (
   `title3` char(250) NOT NULL,
   `paragraph3` text NOT NULL,
   `image3` char(250) NOT NULL,
-  `paragraph_bg` char(250) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+  `paragraph_bg` char(250) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `accueil`
 --
 
-INSERT INTO `accueil` (`parallax_img`, `parallax_logo`, `title1`, `paragraph1`, `image1`, `title2`, `paragraph2`, `image2`, `title3`, `paragraph3`, `image3`, `paragraph_bg`) VALUES
-('img_fond.jpg', 'gameLogo.png', 'SERIOUS GAME', 'blallblal lbllblbllalbllalalblal blabllb la alblabl albalabl lbal alal alb zeaz d z dazdza dazd', 'img_serious.jpg', 'HOW ABOUT', 'blallblal lbllblbllalbllalalblal blabllb', 'img_synop.jpg', 'NARRATIVE GAME', 'blallblal lbllblbllalbllalalblal blabllb', 'img_gamep.png', 'bulle_texte_1.png');
+INSERT INTO `accueil` (`id`, `parallax_img`, `parallax_logo`, `title1`, `paragraph1`, `image1`, `title2`, `paragraph2`, `image2`, `title3`, `paragraph3`, `image3`, `paragraph_bg`) VALUES
+(1, 'img_fond.jpg', 'gameLogo.png', 'SERIOUS GAME', 'blallblal lbllblbllalbllalalblal blabllb la alblabl albalabl lbal alal alb zeaz d z dazdza dazd', 'img_serious.jpg', ' HOW ABOUT', 'blallblal lbllblbllalbllalalblal blabllb', 'img_synop.jpg', ' NARRATIVE GAME', 'blallblal lbllblbllalbllalalblal blabllb', 'img_gamep.png', 'bulle_texte_1.png');
 
 -- --------------------------------------------------------
 
