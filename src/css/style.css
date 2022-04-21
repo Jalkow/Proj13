@@ -200,13 +200,14 @@ h1, h2{
 .card-body p{
     color: #121212;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 2.5vh;
+    font-size: 1.5vw;
 
 }
 
 #actu_card{
     margin-top: 20px;
-    width: 270px;
+    width:28vw;
     background-color: transparent !important;
     border: 0 !important;
     display: flex;
@@ -214,25 +215,24 @@ h1, h2{
     flex-wrap: wrap;
 }
 #actu_img{
-    width: 400px;
+    width:26vw;
     height: auto;
     border-radius: 2.5rem !important;
 }
 
 
 #card_buble{
-    width: 450px;
+    width: 28vw;
     height: auto;
     z-index: -1;
     position: relative;
-    bottom: 250px;
-    right: 10px;
+    bottom: 22vh;
 }
 
 #boutonreadmore{
     position: relative;
-    bottom: 350px;
-    left: 250px;
+    bottom: 27vh;
+    left: 20vw;
 }
 
 #readMore{
@@ -240,7 +240,8 @@ h1, h2{
     color: #F6F6F6;
     background-color: #953f95;
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
+    font-size: 2.5vh;
+    font-size: 1.5vw;
     border-radius: 1.5em;
     padding: 12px;
 }
