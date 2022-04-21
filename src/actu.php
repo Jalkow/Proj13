@@ -35,15 +35,15 @@
             <div class="row">
             <?php for ($i=0; $maxarti > $i ; $i++) {?>
                 <div id="wui" class="col-5 offset-1">
-                    <div id="actu_card" class="card">
-                        <img id="actu_img" src="<?php echo $arti[$i]['news_img']; ?>" class="card-img-top" alt="aie">
+                    <div class="actu_card" class="card">
+                        <img src="<?php echo $arti[$i]['news_img']; ?>" class="card-img-top" alt="aie">
                         <div class="card-body" >
                             <p><?php echo $arti[$i]['news_title']; ?></p>
                         </div>
                     </div>
-                    <img src="img/bulle_texte_2" alt="" id="card_buble">
-                    <div id="boutonreadmore">
-                        <a id="readMore"  href="<?php echo "article.php?articleNum=".$arti[$i]['id_article'];?>">Read more</a>
+                    <img src="img/bulle_texte_2" alt="" class="card_buble">
+                    <div class="boutonreadmore">
+                        <a class="readMore"  href="<?php echo "article.php?articleNum=".$arti[$i]['id_article'];?>">Read more</a>
                     </div>
                 </div>
                 <?php } ?>

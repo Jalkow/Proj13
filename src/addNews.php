@@ -2,15 +2,15 @@
   <h3>Add news</h3>
   <div class="input-field">
     <label >Add img path</label>
-    <input id="modal_article" type="text" name='Picture' />
+    <input class="modal_article" type="text" name='Picture' />
   </div>
   <div class="input-field">
     <label >Write article's title</label>
-    <input id="modal_article" type="text" name="Title">
+    <input class="modal_article" type="text" name="Title">
   </div>
   <div class="input-field">
     <label >Write article's description</label>
-    <input id="modal_article_description" type="text" name="Description">
+    <input class="modal_article_description" type="text" name="Description">
   </div>
   <div class="modal-footer">
     <a class="btn btn-success" onclick="document.getElementById('add-news').submit()"class="modal-close waves-effect waves-red btn-flat ">Create</a>
