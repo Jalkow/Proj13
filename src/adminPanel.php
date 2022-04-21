@@ -26,6 +26,9 @@
                     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalModifyContact">
                         Modifier contact
                     </button>
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalModifyMentions">
+                        Modifier mentions
+                    </button>
                 </div>
 
                 <div class="row">
@@ -59,6 +62,14 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <?php require_once "modifyContact.php"; ?>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal modify mentions page -->
+                <div class="modal fade" id="modalModifyMentions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <?php require_once "modifyMentions.php"; ?>
                         </div>
                     </div>
                 </div>
