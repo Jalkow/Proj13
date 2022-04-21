@@ -20,11 +20,11 @@
             <div id="admin-panel-menu">
                 <div class="row">
                     <h3>ACCUEIL</h3>
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalModifyNews">
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalModifyHome">
                         Modifier accueil
                     </button>
                 </div>
-                
+
                 <div class="row">
                     <h3>ACTUALITES</h3>
                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalnews">
@@ -35,7 +35,7 @@
                         supprimer news
                     </button>
                     
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalModifyHome">
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalModifyNews">
                         Modifier news
                     </button>
                 </div>
@@ -69,7 +69,7 @@
             </div>
         </div>
         <!-- modal delete profile card -->
-        <div class="modal fade" id="modalMod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="modalModifyNews" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <?php require_once "modifyNews.php"; ?>

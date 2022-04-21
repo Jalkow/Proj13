@@ -12,11 +12,17 @@
         <title>Coopni Studio</title>
     </head>
     <body>
-        <?php require_once "config.php";?>
-        <?php require "header.php";?>
-        <div class="parallax-window" data-parallax="scroll" data-image-src="img/img_fond.jpg">
+        <?php require_once "config.php";
+         require "header.php";
+        $sql = "SELECT * FROM accueil"; //sql request to get user infos
+        $pre = $pdo->prepare($sql);
+        $pre->execute();
+        $acu = $pre->fetchAll(PDO::FETCH_ASSOC);
+        ?>
+
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/<?php echo $acu[0]['parallax_img']; ?>">
             <div id="accueil-game-logo">
-                <img src="img/gameLogo.png" alt="logo how about">
+                <img src="img/<?php echo $acu[0]['parallax_logo']; ?>" alt="logo how about">
             </div>
             <div id="accueil-parallax-bottomrow" class="row">
                 <a id="accueil-parallax-arrow" class="col-3 col-lg-2 offset-5" href="#accueil-first-section">
@@ -31,14 +37,14 @@
         <div class="container-fluid">
             <div class="accueil-section" id="accueil-first-section">
                 <div class="row">
-                    <h2 class="col-6">SERIOUS GAME</h2>
+                    <h2 class="col-6"><?php echo $acu[0]['title1']; ?></h2>
                     <div class="col-6">
-                        <img class="col-6" src="img/img_serious.jpg" alt="serieux jeu">
+                        <img class="col-6" src="img/<?php echo $acu[0]['image1']; ?>" alt="serieux jeu">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-10 col-lg-4 offset-lg-3 accueil-section-text">
-                        <p>blallblal lbllblbllalbllalalblal blabllb la alblabl albalabl lbal alal alb zeaz d z dazdza dazd</p>
+                        <p><?php echo $acu[0]['paragraph1']; ?></p>
                     </div>
                 </div>
             </div>
@@ -46,15 +52,15 @@
             <div class="accueil-section" id="accueil-second-section">
                 <div class="row">
                     <div class="col-6">
-                        <img class="col-6" src="img/img_synop.jpg" alt="jeu synop">
+                        <img class="col-6" src="img/<?php echo $acu[0]['image2']; ?>" alt="jeu synop">
                     </div>
                     <div class="col-6 accueil-section-titlecol">
-                        <h2>HOW ABOUT</h2>
+                        <h2><?php echo $acu[0]['title2']; ?></h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-8 col-lg-4 offset-4 offset-lg-5 accueil-section-text">
-                        <p>blallblal lbllblbllalbllalalblal blabllb</p>
+                        <p><?php echo $acu[0]['paragraph2']; ?></p>
                     </div>
                 </div>
             </div>
@@ -62,15 +68,15 @@
             <div class="accueil-section" id="accueil-last-section">
                 <div class="row">
                     <div class="col-6 accueil-section-titlecol">
-                        <h2>NARRATIVE GAME</h2>
+                        <h2><?php echo $acu[0]['title3']; ?></h2>
                     </div>
                     <div class="col-6">
-                        <img class="col-6" src="img/img_gamep.png" alt="narratif jeu">
+                        <img class="col-6" src="img/<?php echo $acu[0]['image3']; ?>" alt="narratif jeu">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-8 col-lg-4 offset-lg-3 accueil-section-text">
-                        <p>blallblal lbllblbllalbllalalblal blabllb</p>
+                        <p><?php echo $acu[0]['paragraph3']; ?></p>
                     </div>
                 </div>
             </div>
