@@ -26,6 +26,169 @@ h1, h2{
 .parallax-window {
     min-height: 400px;
     background: transparent;
+    height: 100vh;
+    position: relative;
+    margin-bottom: 5vh;
+}
+
+#accueil-game-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5)
+}
+
+#accueil-game-logo img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 25vw;
+    width: 25vw;
+}
+
+#accueil-parallax-bottomrow{
+    position: absolute;
+    bottom: 10%;
+    height: 5%;
+    width: 100%;
+}
+
+#accueil-parallax-arrow{
+    height: 100%;
+    text-align: center;
+}
+
+#accueil-parallax-arrow img{
+    height: 100% !important;
+}
+
+#accueil-parallax-button{
+    background-color: #f5f5f5;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#accueil-parallax-button a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.accueil-section{
+    margin-bottom: 10vh;
+}
+
+.accueil-section .row{
+    text-align: center;
+}
+
+#accueil-first-section .row{
+    align-items: center;
+}
+
+.accueil-section img{
+    height: 15vh;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.accueil-section h2{
+    font-size: 25px !important;
+}
+
+#accueil-first-section .accueil-section-text{
+    margin-top: -5vh !important;
+}
+
+.accueil-section-text p{
+    background-image: url(../img/bulle_texte_1.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 10px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.accueil-section-titlecol{
+    padding-left: 0px !important;
+}
+
+#accueil-second-section h2, #accueil-last-section h2{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+#accueil-second-section h2{
+    text-align: start;
+}
+
+#accueil-second-section .accueil-section-text, #accueil-last-section .accueil-section-text{
+    margin-top: -12vh;
+}
+
+#accueil-second-section .accueil-section-text p{
+    filter: drop-shadow(5px 14px 10px #000);
+}
+
+#accueil-last-section h2{
+    text-align: end;
+}
+
+#accueil-last-section .accueil-section-titlecol{
+    padding-right: 0px !important;
+}
+
+#accueil-buybutton{
+    border-radius: 40px;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 5vh;
+    background-color: #953f95;
+    color: #F6F6F6;
+}
+
+@media screen and (min-width: 1200px){
+    #accueil-game-logo img{
+        height: 10vw !important;
+        width: 10vw !important;
+    }
+
+    .accueil-section img{
+        height: 50vh;
+    }
+
+    .accueil-section-text p{
+        font-size: 25px;
+    }
+
+    .accueil-section h2{
+        font-size: 80px !important;
+    }
+
+    #accueil-second-section .accueil-section-text, #accueil-last-section .accueil-section-text{
+        margin-top: -25vh;
+    }
+
+    #accueil-buybutton{
+        font-size: 60px;
+        padding: 15px;
+        margin-left: 10vw;
+    }
+}
+
+@media screen and (min-width: 1800px){
+    #accueil-parallax-button a{
+        font-size: 30px;
+    }
 }
 
 #transi{
