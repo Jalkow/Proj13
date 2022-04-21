@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mar. 19 avr. 2022 à 13:57
+-- Généré le : jeu. 21 avr. 2022 à 13:28
 -- Version du serveur : 5.7.36
 -- Version de PHP : 7.4.26
 
@@ -24,6 +24,35 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `accueil`
+--
+
+DROP TABLE IF EXISTS `accueil`;
+CREATE TABLE IF NOT EXISTS `accueil` (
+  `parallax_img` char(250) NOT NULL,
+  `parallax_logo` char(250) NOT NULL,
+  `title1` char(250) NOT NULL,
+  `paragraph1` text NOT NULL,
+  `image1` char(250) NOT NULL,
+  `title2` char(250) NOT NULL,
+  `paragraph2` text NOT NULL,
+  `image2` char(250) NOT NULL,
+  `title3` char(250) NOT NULL,
+  `paragraph3` text NOT NULL,
+  `image3` char(250) NOT NULL,
+  `paragraph_bg` char(250) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `accueil`
+--
+
+INSERT INTO `accueil` (`parallax_img`, `parallax_logo`, `title1`, `paragraph1`, `image1`, `title2`, `paragraph2`, `image2`, `title3`, `paragraph3`, `image3`, `paragraph_bg`) VALUES
+('img_fond.jpg', 'gameLogo.png', 'SERIOUS GAME', 'blallblal lbllblbllalbllalalblal blabllb la alblabl albalabl lbal alal alb zeaz d z dazdza dazd', 'img_serious.jpg', 'HOW ABOUT', 'blallblal lbllblbllalbllalalblal blabllb', 'img_synop.jpg', 'NARRATIVE GAME', 'blallblal lbllblbllalbllalalblal blabllb', 'img_gamep.png', 'bulle_texte_1.png');
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `actu`
 --
 
@@ -34,14 +63,16 @@ CREATE TABLE IF NOT EXISTS `actu` (
   `news_img` char(250) NOT NULL,
   `news_description` varchar(10000) NOT NULL,
   PRIMARY KEY (`id_article`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `actu`
 --
 
 INSERT INTO `actu` (`id_article`, `news_title`, `news_img`, `news_description`) VALUES
-(1, 'efrgopihuj', 'img/img_art2', 'erghùmflsdj');
+(1, 'test', 'img/email.png', 'tezadsqdzd zzzz q'),
+(2, 'dazdazd', 'img/aurore.jpg', 'azdazdaz dazda zd '),
+(3, 'zzz zzz zzz zzz zzz zz zzz zzz zzz zzz zzz zzzzz zzz zzz zzz zzz zz', 'img/aurore.jpg', 'zzz zzz zzz zzz zzz zzzzz zzz zzz zzz zzz zzzzz zzz zzz zzz zzz zzzzz zzz zzz zzz zzz zz');
 
 -- --------------------------------------------------------
 
@@ -113,8 +144,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 INSERT INTO `user` (`email`, `password`, `name`, `last_name`, `adress`, `city`, `postal_code`, `country`, `phone`, `admin`, `id`) VALUES
 ('ab@gmail.com', '1234', 'wui', 'iuw', 'ijo', 'es', 41, 'sdqqf', 1451, 2, 1),
-('az@gmail.com', 'fc1200c7a7aa52109d762a9f005b149abef01479', 'qg', 'qdgqd', 'dqfgq', 'qdfgdfg', 45145, 'dqfgdfq', 645156, 0, 2),
-('po@gmail.com', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'dfsg', 'dfsgsdf', 'dsfgsdf', 'gdfsgdfs', 987, 'dfsgdfsg', 41, 0, 3);
+('az@gmail.com', 'fc1200c7a7aa52109d762a9f005b149abef01479', 'qg', 'qdgqd', 'dqfgq', 'qdfgdfg', 45145, 'dqfgdfq', 645156, 1, 2),
+('po@gmail.com', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'dfsg', 'dfsgsdf', 'dsfgsdf', 'gdfsgdfs', 987, 'dfsgdfsg', 41, 2, 3);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
