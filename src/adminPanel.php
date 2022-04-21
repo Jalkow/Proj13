@@ -15,8 +15,10 @@
         require_once "config.php";
         require "header.php"; 
         ?>
-
+<div id="admin-panel">
         <h2>ADMIN</h2>
+        <div id="admin-panel-menu">
+                <div class="row">
         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalnews">
             add news
         </button>
@@ -53,6 +55,26 @@
                 </div>
             </div>
         </div>
+        </div>
+                <div class="row">
+
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalMod">
+                        Modify news
+                    </button>
+                    <!-- modal delete profile card -->
+                    <div class="modal fade" id="modalMod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <?php require_once "modifyNews.php"; ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 
         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addImage">
